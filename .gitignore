@@ -27,3 +27,4 @@ ui/*.png
 .DS_Store
 .vscode/
 .idea/
+.vercel

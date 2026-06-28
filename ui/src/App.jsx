@@ -104,22 +104,18 @@ function getGameDescription(item) {
 }
 
 function readStoredSet(key, fallbackItems, flagKey) {
-  const fallback = fallbackItems
-    .filter((item) => item[flagKey])
-    .map((item) => item.appid)
-
   const raw = localStorage.getItem(key)
-  if (!raw) return new Set(fallback)
+  if (!raw) return new Set()
 
   try {
     const parsed = JSON.parse(raw)
     if (Array.isArray(parsed)) return new Set(parsed.map(Number))
     if (Array.isArray(parsed.appids)) return new Set(parsed.appids.map(Number))
   } catch {
-    // Ignore malformed saved state and fall back to dataset defaults.
+    // Ignore malformed saved state
   }
 
-  return new Set(fallback)
+  return new Set()
 }
 
 function parseImportedIds(text) {
