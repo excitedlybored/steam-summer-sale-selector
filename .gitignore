@@ -1,0 +1,27 @@
+# Ignore root data files, keeping package configuration
+/*.json
+!/package.json
+!/package-lock.json
+/steam-session.json
+/*.csv
+
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Node modules and build files
+node_modules/
+dist/
+ui/node_modules/
+ui/dist/
+ui/test-results/
+
+# Screenshot artifacts
+*.png
+ui/*.png
+
+# IDE / OS metadata
+.DS_Store
+.vscode/
+.idea/

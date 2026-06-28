@@ -1,0 +1,18 @@
+{
+  "name": "steam-game-analysis",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape:summer-sale-games": "node scripts/scrape-summer-sale-games.mjs",
+    "filter:summer-sale-overwhelmingly-positive": "node scripts/filter-summer-sale-overwhelmingly-positive.mjs",
+    "filter:summer-sale-very-positive": "REVIEW_TIER='Very Positive' node scripts/filter-summer-sale-overwhelmingly-positive.mjs",
+    "combine:summer-sale-review-tiers": "node scripts/combine-summer-sale-tier-lists.mjs",
+    "enrich:summer-sale-tags": "node scripts/enrich-combined-summer-sale-tags.mjs",
+    "normalize:combined-summer-sale-appids": "node scripts/normalize-combined-summer-sale-appids.mjs",
+    "clean:combined-summer-sale": "node scripts/clean-combined-summer-sale-list.mjs"
+  },
+  "dependencies": {
+    "crawlee": "^3.13.2"
+  }
+}

@@ -1,0 +1,29 @@
+/* Custom premium scrollbar styling */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 99px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Game image hover zoom transition */
+.game-main img {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.game-row:hover .game-main img {
+  transform: scale(1.04);
+}
+
+/* Card hover glow transition */
+.shadow-soft {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+

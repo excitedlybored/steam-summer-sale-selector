@@ -1,0 +1,9 @@
+{
+	"id": "SHXnbTbbDwbzBDX",
+	"json": "{\"id\":\"SHXnbTbbDwbzBDX\",\"url\":\"https://store.steampowered.com/search/results/?query=&start=1400&count=100&dynamic_data=&sort_by=_ASC&supportedlang=english&snr=1_7_7_230_7&specials=1&infinite=1&ndl=1&category1=998\",\"uniqueKey\":\"start-1400\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"start\":1400},\"handledAt\":\"2026-06-27T13:58:38.922Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "start-1400",
+	"url": "https://store.steampowered.com/search/results/?query=&start=1400&count=100&dynamic_data=&sort_by=_ASC&supportedlang=english&snr=1_7_7_230_7&specials=1&infinite=1&ndl=1&category1=998"
+}
