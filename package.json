@@ -10,7 +10,8 @@
     "combine:summer-sale-review-tiers": "node scripts/combine-summer-sale-tier-lists.mjs",
     "enrich:summer-sale-tags": "node scripts/enrich-combined-summer-sale-tags.mjs",
     "normalize:combined-summer-sale-appids": "node scripts/normalize-combined-summer-sale-appids.mjs",
-    "clean:combined-summer-sale": "node scripts/clean-combined-summer-sale-list.mjs"
+    "clean:combined-summer-sale": "node scripts/clean-combined-summer-sale-list.mjs",
+    "build": "npm run build --prefix ui"
   },
   "dependencies": {
     "crawlee": "^3.13.2"
